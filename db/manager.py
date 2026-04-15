@@ -47,3 +47,6 @@ class DatabaseManager:
     
     def _filter_new_rows(self, df: pd.DataFrame, id_col: str, table_name: str) -> pd.DataFrame:
         return df[~df[id_col].isin(self._get_existing_ids(table_name, id_col))]
+    
+    def table_info(self) -> None:
+        self._table_info()

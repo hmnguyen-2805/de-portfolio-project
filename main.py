@@ -18,6 +18,6 @@ def main() -> None:
     pitching_stats_df = clean_pitching_stats(raw_pitching_stats)
     load_pitching_stats(pitching_stats_df, db)
 
-    db._table_info()
+    db.table_info()
 
 main()

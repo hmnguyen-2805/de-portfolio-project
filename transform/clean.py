@@ -1,6 +1,6 @@
 import pandas as pd
 
-def clean_roster(data: list) -> pd.DataFrame:
+def clean_roster(data: dict) -> pd.DataFrame:
     roster = data['roster']
 
     players = []
@@ -18,7 +18,7 @@ def clean_roster(data: list) -> pd.DataFrame:
     
     return pd.DataFrame(players)
 
-def clean_pitching_stats(data: list) -> pd.DataFrame:
+def clean_pitching_stats(data: dict) -> pd.DataFrame:
     stats = data['stats']
     splits = stats[0]['splits']
 
