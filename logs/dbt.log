@@ -25,3 +25,16 @@ Happy modeling!
 [0m15:08:06.957466 [info ] [MainThread]: Profile dodgers_dbt written to C:\Users\mamch\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
 [0m15:08:06.958838 [debug] [MainThread]: Command `dbt init` succeeded at 15:08:06.957466 after 6.45 seconds
 [0m15:08:06.958838 [debug] [MainThread]: Flushing usage events
+[0m16:14:45.507028 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 16:14:45.571003 | 004abbc2-79af-469d-9637-723bce4cd60c ==============================
+[0m16:14:45.571003 [info ] [MainThread]: Running with dbt=1.11.8
+[0m16:14:45.572508 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mamch\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:14:45.572508 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\Code\de-portfolio-project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:14:45.573520 [debug] [MainThread]: Command `dbt run` failed at 16:14:45.573520 after 0.11 seconds
+[0m16:14:45.573520 [debug] [MainThread]: Flushing usage events
