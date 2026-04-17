@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: stg_roster
+    description: "Cleaned roster data from the MLB Stats API. One row per player."
+    columns:
+      - name: player_id
+        description: "Unique MLB player identifier."
+        tests:
+          - not_null
+          - unique
+      - name: player_name
+        description: "Full name of the player."
+        tests:
+          - not_null
+      - name: player_position
+        description: "Primary position of the player."
+        tests:
+          - not_null
+
+  - name: stg_pitching_stats
+    description: "Cleaned 2025 pitching stats from the MLB Stats API. One row per pitcher."
+    columns:
+      - name: player_id
+        description: "Unique MLB player identifier."
+        tests:
+          - not_null
+          - unique
+      - name: player_name
+        description: "Full name of the pitcher."
+        tests:
+          - not_null
+      - name: era
+        description: "Earned Run Average for the 2025 season."
+        tests:
+          - not_null
+      - name: strikeouts
+        description: "Total strikeouts for the 2025 season."
+        tests:
+          - not_null
+      - name: innings_pitched
+        description: "Total innings pitched for the 2025 season."
+        tests:
+          - not_null
