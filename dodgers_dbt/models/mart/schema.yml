@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: mart_pitcher_roster
+    description: "Clean table containing pitching roster as well as pitching stats"
+    columns:
+      - name: player_id
+        description: "Unique MLB identifier"
+        tests: 
+          - not_null
+          - unique
+      - name: player_name
+        description: "Full name of the player"
+        tests:
+          - not_null
+      - name: player_position
+        description: "Primary position of the player."
+        tests:
+          - not_null
+  - name: mart_pitching_summary
+    description: "Clean table containing pitching stats of eligible pitchers"
+    columns:
+      - name: player_name
+        description: "Full name of player"
+        tests:
+          - not_null
+      - name: era
+        description: "Earned Run Average"
+        tests:
+          - not_null

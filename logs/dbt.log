@@ -1,0 +1,27 @@
+[0m15:08:00.569892 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:08:00.660386 | 1340a413-764b-4dca-9879-d32d8487154d ==============================
+[0m15:08:00.660386 [info ] [MainThread]: Running with dbt=1.11.8
+[0m15:08:00.661397 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mamch\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt init dodgers_dbt', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:08:00.684322 [debug] [MainThread]: Starter project path: E:\Code\de-portfolio-project\.venv\Lib\site-packages\dbt\include\starter_project
+[0m15:08:00.707897 [info ] [MainThread]: 
+Your new dbt project "dodgers_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:08:00.707897 [info ] [MainThread]: Setting up your profile.
+[0m15:08:06.957466 [info ] [MainThread]: Profile dodgers_dbt written to C:\Users\mamch\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m15:08:06.958838 [debug] [MainThread]: Command `dbt init` succeeded at 15:08:06.957466 after 6.45 seconds
+[0m15:08:06.958838 [debug] [MainThread]: Flushing usage events
