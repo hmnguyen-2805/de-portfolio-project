@@ -38,3 +38,16 @@ Runtime Error
   
 [0m16:14:45.573520 [debug] [MainThread]: Command `dbt run` failed at 16:14:45.573520 after 0.11 seconds
 [0m16:14:45.573520 [debug] [MainThread]: Flushing usage events
+[0m16:31:00.708382 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 16:31:00.766144 | 6331b19c-606a-4a7e-9baf-02a0ed37bc6c ==============================
+[0m16:31:00.766144 [info ] [MainThread]: Running with dbt=1.11.8
+[0m16:31:00.766144 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\mamch\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt docs generate', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:31:00.767647 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\Code\de-portfolio-project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:31:00.768707 [debug] [MainThread]: Command `dbt docs generate` failed at 16:31:00.768707 after 0.10 seconds
+[0m16:31:00.768707 [debug] [MainThread]: Flushing usage events
