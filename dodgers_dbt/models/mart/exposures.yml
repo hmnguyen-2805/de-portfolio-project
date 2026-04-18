@@ -1,0 +1,15 @@
+version: 2
+
+exposures:
+  - name: dodgers_pitching_dashboard
+    type: dashboard
+    maturity: medium
+    description: "Power BI dashboard showing 2025 Dodgers pitching performance"
+
+    depends_on:
+      - ref('mart_pitching_summary')
+      - ref('mart_pitcher_roster')
+
+    owner:
+      name: Minh Nguyen
+      email: mamchia06@gmail.com

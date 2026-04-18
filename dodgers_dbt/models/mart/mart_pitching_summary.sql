@@ -4,13 +4,14 @@ with pitching as (
 
 eligible_pitching as (
     select * from pitching
-    where innings_pitched >= 10
+    where innings_pitched >= {{ var('min_innings_pitched') }}
 )
 
-select 
+select
     player_name,
     era,
     strikeouts,
-    innings_pitched
+    innings_pitched,
+    {{ is_elite_pitcher('era') }} as elite_status
 from eligible_pitching
 order by era asc

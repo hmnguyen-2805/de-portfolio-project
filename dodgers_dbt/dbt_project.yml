@@ -36,4 +36,7 @@ models:
       +materialized: view
     mart:
       +materialized: table
-      
+
+vars:
+  min_innings_pitched: 10
+  current_season: 2025

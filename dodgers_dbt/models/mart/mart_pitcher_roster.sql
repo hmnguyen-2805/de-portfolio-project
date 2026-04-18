@@ -13,7 +13,8 @@ joined as (
         r.player_position,
         p.era,
         p.strikeouts,
-        p.innings_pitched
+        p.innings_pitched,
+        {{ classify_workload('p.innings_pitched') }} as pitcher_role
     from roster r
     inner join pitching p
         on r.player_id = p.player_id
