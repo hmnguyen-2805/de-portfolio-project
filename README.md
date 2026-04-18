@@ -98,7 +98,7 @@ de-portfolio-project/
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/de-portfolio-project.git
+git clone https://github.com/hmnguyen-2805/de-portfolio-project.git
 cd de-portfolio-project
 
 python -m venv .venv
