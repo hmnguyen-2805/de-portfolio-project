@@ -8,3 +8,4 @@ __pycache__/
 dodgers_dbt/target/
 dodgers_dbt/dbt_packages/
 dodgers_dbt/logs/
+logs/
